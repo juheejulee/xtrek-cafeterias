@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xtrek Cafeterias – Fresh, Locally Sourced Meals</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="nav-container">
+        <!-- Left: Logo -->
+        <div class="nav-left">
+          <a href="#" class="logo">xtrek</a>
+        </div>
+
+        <!-- Center: Menu -->
+        <ul class="nav-menu">
+          <li><a href="#main">Main</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#catering">Catering</a></li>
+
+          <!-- Cafeterias dropdown -->
+          <li class="dropdown">
+            <button class="dropbtn">Cafeterias ▾</button>
+            <ul class="dropdown-content">
+              <li><a href="#britannia">Britannia</a></li>
+              <li><a href="#glebe">Glebe</a></li>
+              <li><a href="#mitigo">Mitigomijokan</a></li>
+              <li><a href="#versant">Versant</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Right: Language -->
+        <div class="nav-right">
+          <a href="index-fr.html" class="lang-link">English</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <section id="main" class="hero">
+      <div class="hero-container">
+        <img
+          src="assets/images/round_menu.png"
+          alt="Fresh, locally sourced ingredients used by xtrek cafeterias"
+          class="hero-image"
+        />
+        <h1 class="hero-title">
+          Proudly serving fresh,
+          <span class="nowrap">high-quality meals </span>made with locally
+          sourced ingredients.
+        </h1>
+      </div>
+    </section>
+    <!-- section divider -->
+    <hr class="section-divider" />
+
+    <!-- Services -->
+    <section id="services" class="services-section">
+      <h2 class="section-title">Our Services</h2>
+
+      <div class="services-container">
+        <div class="service-item">
+          <h3>Daily Menu</h3>
+          <p>Fresh, locally sourced meals available from Monday to Friday.</p>
+          <p>
+            Ingredients are fully listed for accessibility and dietary needs.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h3>Catering Services</h3>
+          <p>Catering options for meetings and nearby businesses.</p>
+          <p>Menu, pricing, and availability vary by cafeteria.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section divider -->
+    <hr class="section-divider" />
+
+    <!-- Catering with table -->
+
+    <section id="catering" class="catering-section">
+      <h2 class="section-title">Catering Offering</h2>
+
+      <table class="catering-table">
+        <caption>
+          Catering options available for Standard and Premium plans, including
+          typical dishes and dietary accommodations.
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Plan Type</th>
+            <th scope="col">Type</th>
+            <th scope="col">Typical Dishes</th>
+            <th scope="col">Vegan</th>
+            <th scope="col">Nut-Free</th>
+            <th scope="col">Gluten-Free</th>
+            <th scope="col">Vegetarian</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- STANDARD -->
+          <tr>
+            <th scope="row" rowspan="3">Standard</th>
+            <td>Breakfast</td>
+            <td>Pastries, yogurt, juice</td>
+            <td><span aria-label="Available">✓</span></td>
+            <td><span aria-label="Available"></span></td>
+            <td><span aria-label="Available on request"></span></td>
+            <td><span aria-label="Available">✓</span></td>
+          </tr>
+
+          <tr>
+            <td>Lunch</td>
+            <td>Sandwiches, salads, fruit</td>
+            <td><span aria-label="Available on request"></span></td>
+            <td><span aria-label="Available">✓</span></td>
+            <td><span aria-label="Available"></span></td>
+            <td><span aria-label="Available">✓</span></td>
+          </tr>
+
+          <tr>
+            <td>Dinner</td>
+            <td>Pasta, grilled chicken, vegetables</td>
+            <td><span aria-label="Available on request"></span></td>
+            <td><span aria-label="Available">✓</span></td>
+            <td><span aria-label="Available"></span></td>
+            <td><span aria-label="Available">✓</span></td>
+          </tr>
+
+          <!-- PREMIUM -->
+          <tr>
+            <th scope="row" rowspan="3">Premium</th>
+            <td>Breakfast</td>
+            <td>Hot breakfast buffet, fresh juice</td>
+            <td><span aria-label="Available on request"></span></td>
+            <td><span aria-label="Available">✓</span></td>
+            <td><span aria-label="Available">✓</span></td>
+            <td><span aria-label="Available"></span></td>
+          </tr>
+
+          <tr>
+            <td>Lunch</td>
+            <td>Grain bowls, wraps, smoothies</td>
+            <td><span aria-label="Available">✓</span></td>
+            <td><span aria-label="Available">✓</span></td>
+            <td><span aria-label="Available">✓</span></td>
+            <td><span aria-label="Available">✓</span></td>
+          </tr>
+
+          <tr>
+            <td>Dinner</td>
+            <td>Steak, seafood, gourmet sides</td>
+            <td><span aria-label="Available on request"></span></td>
+            <td><span aria-label="Available"></span></td>
+            <td><span aria-label="Available">✓</span></td>
+            <td><span aria-label="Available"></span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="catering-note">
+        <strong>Note:</strong> Availability may vary by cafeteria. Dietary
+        options are available on request.
+      </p>
+    </section>
+    <!-- section divider -->
+    <hr class="section-divider" />
+    <!-- Cafeterias accordion -->
+    <section class="cafeterias-section">
+      <h2>Our Cafeterias</h2>
+
+      <!-- ONE ACCORDION BLOCK -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Britannia
+          <span class="arrow">▾</span>
+        </button>
+
+        <div class="accordion-content">
+          <h3 class="dish-name">Mediterranean Grain Bowl</h3>
+
+          <p class="dish-info">
+            A vibrant and wholesome bowl packed with quinoa, brown rice, fresh
+            vegetables, and tangy feta, topped with a zesty tahini dressing.
+            Perfect for a light yet satisfying lunch.
+          </p>
+
+          <h4>Ingredients</h4>
+          <ul class="ingredient-list">
+            <li>Quinoa</li>
+            <li>Brown rice</li>
+            <li>Chickpeas</li>
+            <li>Cherry tomatoes</li>
+            <li>Cucumber</li>
+            <li>Kalamata olives</li>
+            <li>Red onion</li>
+            <li>Feta cheese</li>
+            <li>Fresh parsley</li>
+            <li>Lemon juice</li>
+            <li>Olive oil</li>
+            <li>Garlic</li>
+            <li>Sea salt</li>
+            <li>Black pepper</li>
+            <li>Sumac</li>
+            <li>Tahini dressing</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 복사해서 나머지 3개 cafeteria 넣으면 됨 -->
+
+      <!-- Two ACCORDION BLOCK -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Glebe
+          <span class="arrow">▾</span>
+        </button>
+
+        <div class="accordion-content">
+          <h3 class="dish-name">Thai Green Curry with Tofu</h3>
+
+          <p class="dish-info">
+            A fragrant and creamy coconut-based curry loaded with colorful
+            vegetables and tender tofu, infused with authentic Thai spices and
+            served with jasmine rice.
+          </p>
+
+          <h4>Ingredients</h4>
+          <ul class="ingredient-list">
+            <li>Tofu (firm, cubed)</li>
+            <li>Coconut milk</li>
+            <li>
+              Green curry paste (green chilies, lemongrass, galangal, garlic,
+              shallots, kaffir lime peel, coriander seeds, cumin, salt) Bamboo
+              shoots
+            </li>
+            <li>Zucchini</li>
+            <li>Bell peppers (red and yellow)</li>
+            <li>Thai basil</li>
+            <li>Fish sauce (or soy sauce for vegetarian option)</li>
+            <li>Brown sugar</li>
+            <li>Lime juice</li>
+            <li>Jasmine rice (served on the side)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 복사해서 나머지 3개 cafeteria 넣으면 됨 -->
+    </section>
+    <!-- section divider -->
+    <hr class="section-divider" />
+    <script src="assets/script.js"></script>
+  </body>
+
+  <footer>
+    <div class="footer-info">
+      <p>Visit our cafeterias</p>
+      <p>We are open from Monday to Friday</p>
+    </div>
+    <p><strong>© 2025 xtrek cafeterias</strong></p>
+  </footer>
+</html>

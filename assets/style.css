@@ -1,0 +1,318 @@
+/* BODY */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #dbe4e0, #d7e7f0);
+}
+
+/* HEADER */
+.site-header {
+  padding: 20px 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+/* LOGO */
+.logo {
+  color: #254f5a;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* NAV MENU */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #335c7a;
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #335c7a;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  top: 100%; /* 버튼 바로 아래에 딱 붙게 */
+  left: 0;
+  position: absolute;
+  background: white;
+  min-width: 150px;
+  border: 1px solid #ddd;
+  padding: 5px 0;
+  z-index: 999;
+  display: none;
+  list-style: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #335c7a;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #f4f9fb;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* RIGHT LANGUAGE */
+.nav-right a {
+  color: #335c7a;
+  text-decoration: none;
+}
+
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+/* UNIFIED SECTION PADDING */
+section {
+  padding: 80px 40px; /* Key fix */
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero-title {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #395886;
+  max-width: 380px; /* 500px -> 380px for the size of hero-text */
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 32px;
+  color: #2f4a5d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* SERVICES SECTION */
+.services-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.service-item h3 {
+  font-size: 22px;
+  color: #3c5d7c;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  color: #2e4350;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* CATERING TABLE */
+.catering-table {
+  width: 100%; /* table size*/
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.catering-table caption {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Borders */
+.catering-table th,
+.catering-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Header */
+.catering-table thead th {
+  background: #f3f6f8;
+  font-weight: 600;
+}
+
+.catering-table th[scope="row"] {
+  background: #fafafa;
+}
+
+.catering-note {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.catering-table tbody tr:hover,
+.catering-table tbody tr:focus {
+  background-color: #f4f9fb;
+}
+
+
+
+
+/* Daily menu text */
+.daily-menu {
+  font-size: 16px;
+  color: #2e4350;
+  margin-bottom: 30px;
+}
+
+
+
+/* cafeterias */
+
+.cafeterias-section {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.accordion-item {
+  background: #ffffff;
+  border: 1px solid #d2d9de;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #24323f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background: #f3f6f8;
+}
+
+.arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: max-height 0.35s ease;
+}
+
+.accordion-content.open {
+  padding: 20px;
+}
+
+.accordion-content h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.dish-info {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.ingredient-list {
+  columns: 2; /* 두 줄로 정렬 */
+  column-gap: 40px;
+  padding-left: 20px;
+}
+
+.ingredient-list li {
+  margin-bottom: 4px;
+}
+
+/* cafeterias */
+
+/* SECTION DIVIDER */
+.section-divider {
+  width: 90%;
+  margin: 1px auto;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #2b3e46;
+}
