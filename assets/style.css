@@ -215,7 +215,16 @@ section {
 .catering-table tbody tr:focus {
   background-color: #f4f9fb;
 }
+/* table column width */
+table {
+  table-layout: fixed; 
+  width: 100%; 
+}
 
+td, th {
+  word-wrap: break-word;
+  padding: 12px;
+}
 
 
 
