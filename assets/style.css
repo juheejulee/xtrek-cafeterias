@@ -5,6 +5,7 @@ body {
   background: linear-gradient(to right, #dbe4e0, #d7e7f0);
 }
 
+
 /* HEADER */
 .site-header {
   padding: 20px 0;
@@ -242,6 +243,7 @@ td, th {
 .cafeterias-section {
   width: 70%;
   margin: 50px auto;
+  overflow: visible;
 }
 
 .accordion-item {
@@ -249,7 +251,7 @@ td, th {
   border: 1px solid #d2d9de;
   border-radius: 8px;
   margin-bottom: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .accordion-header {
@@ -279,7 +281,7 @@ td, th {
   max-height: 0;
   overflow: hidden;
   padding: 0 20px;
-  transition: max-height 0.35s ease;
+  transition: max-height 2000px;
 }
 
 .accordion-content.open {
@@ -325,3 +327,24 @@ footer {
   font-size: 1rem;
   color: #2b3e46;
 }
+
+
+/* Media Query */
+/* media query */
+@media (max-width: 900px) {
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-right {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+

@@ -18,18 +18,25 @@
 
         <!-- Center: Menu -->
         <ul class="nav-menu">
-          <li><a href="#main">Main</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#catering">Catering</a></li>
+          <li><a data-target="main" class="nav-link scroll-link">Main</a></li>
+          <li>
+            <a data-target="services" class="nav-link scroll-link">Services</a>
+          </li>
+          <li>
+            <a data-target="catering" class="nav-link scroll-link">Catering</a>
+          </li>
 
-          <!-- Cafeterias dropdown -->
           <li class="dropdown">
             <button class="dropbtn">Cafeterias ▾</button>
             <ul class="dropdown-content">
-              <li><a href="#britannia">Britannia</a></li>
-              <li><a href="#glebe">Glebe</a></li>
-              <li><a href="#mitigo">Mitigomijokan</a></li>
-              <li><a href="#versant">Versant</a></li>
+              <li>
+                <a data-target="britannia" class="scroll-link">Britannia</a>
+              </li>
+              <li><a data-target="glebe" class="scroll-link">Glebe</a></li>
+              <li>
+                <a data-target="mitigo" class="scroll-link">Mitigomijokan</a>
+              </li>
+              <li><a data-target="versant" class="scroll-link">Versant</a></li>
             </ul>
           </li>
         </ul>
@@ -179,7 +186,7 @@
     <!-- Cafeterias accordion -->
 
     <section class="cafeterias-section">
-      <h2>Our Cafeterias</h2>
+      <h2 class="section-title">Our Cafeterias</h2>
 
       <!-- ONE ACCORDION BLOCK -->
       <div class="accordion-item" id="britannia">
@@ -257,11 +264,108 @@
         </div>
       </div>
 
+      <!-- Third ACCORDION BLOCK -->
+      <div class="accordion-item" id="mitigo">
+        <button class="accordion-header">
+          Mitigomijokan
+          <span class="arrow">▾</span>
+        </button>
+
+        <div class="accordion-content">
+          <h3 class="dish-name">Loaded Veggie Lasagna</h3>
+
+          <p class="dish-info">
+            A hearty, oven-baked lasagna layered with roasted vegetables, rich
+            tomato sauce, and a trio of cheeses, delivering comfort and flavor
+            in every bite.
+          </p>
+
+          <h4>Ingredients</h4>
+          <ul class="ingredient-list">
+            <li>Lasagna noodles</li>
+            <li>Ricotta cheese</li>
+            <li>Mozzarella cheese</li>
+            <li>Parmesan cheese</li>
+            <li>Spinach</li>
+            <li>Zucchini</li>
+            <li>Eggplant</li>
+            <li>Mushrooms</li>
+            <li>Bell peppers</li>
+            <li>Onion</li>
+            <li>Garlic</li>
+            <li>Olive oil</li>
+            <li>Tomato sauce (tomatoes, basil, oregano, salt, pepper)</li>
+            <li>Fresh basil</li>
+            <li>Nutmeg</li>
+            <li>Eggs (in ricotta mix)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- forth ACCORDION BLOCK -->
+      <div class="accordion-item" id="versant">
+        <button class="accordion-header">
+          Versant
+          <span class="arrow">▾</span>
+        </button>
+
+        <div class="accordion-content">
+          <h3 class="dish-name">BBQ Pulled Jackfruit Sandwich</h3>
+
+          <p class="dish-info">
+            A smoky, sweet, and savory plant-based sandwich featuring tender
+            jackfruit in BBQ sauce, topped with crunchy coleslaw and served on a
+            toasted bun.
+          </p>
+
+          <h4>Ingredients</h4>
+          <ul class="ingredient-list">
+            <li>Young green jackfruit (canned, drained)</li>
+            <li>
+              BBQ sauce (tomato paste, vinegar, molasses, brown sugar, mustard,
+              garlic powder, onion powder, smoked paprika)
+            </li>
+            <li>Onion</li>
+            <li>Garlic</li>
+            <li>Olive oil</li>
+            <li>Apple cider vinegar</li>
+            <li>Coleslaw mix (cabbage, carrots)</li>
+            <li>
+              Coleslaw dressing (mayonnaise, vinegar, sugar, celery seed, salt)
+            </li>
+            <li>Whole wheat sandwich buns</li>
+            <li>Pickles</li>
+            <li>Fresh cilantro (optional garnish)</li>
+          </ul>
+        </div>
+      </div>
+
       <!-- 복사해서 나머지 3개 cafeteria 넣으면 됨 -->
     </section>
     <!-- section divider -->
     <hr class="section-divider" />
+    <!-- javascript -->
     <script src="assets/script.js"></script>
+    <!-- javascript -->
+
+<!-- Fix for layout jump when clicking anchor navigation links -->
+    <script>
+      document.querySelectorAll(".scroll-link").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+
+          const targetId = link.getAttribute("data-target");
+          const section = document.getElementById(targetId);
+
+          if (section) {
+            section.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
   </body>
 
   <footer>
