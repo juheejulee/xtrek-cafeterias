@@ -48,6 +48,7 @@
       </nav>
     </header>
 
+    <main class="main-container">
     <!-- Main -->
     <section id="main" class="hero">
       <div class="hero-container">
@@ -188,6 +189,18 @@
     <section class="cafeterias-section">
       <h2 class="section-title">Our Cafeterias</h2>
 
+      <h2>Menu of the day</h2>
+
+      <p class="menu-description">
+        Discover today’s fresh and flavorful selections, crafted by our chefs
+        using seasonal ingredients and local produce.
+      </p>
+
+      <p class="menu-note">
+        <strong>Note:</strong> Ingredients are available upon request. Please
+        ask our staff if you have any dietary concerns or allergies.
+      </p>
+        <br>
       <!-- ONE ACCORDION BLOCK -->
       <div class="accordion-item" id="britannia">
         <button class="accordion-header">
@@ -344,11 +357,12 @@
     </section>
     <!-- section divider -->
     <hr class="section-divider" />
+    </main>
     <!-- javascript -->
     <script src="assets/script.js"></script>
     <!-- javascript -->
 
-<!-- Fix for layout jump when clicking anchor navigation links -->
+    <!-- Fix for layout jump when clicking anchor navigation links -->
     <script>
       document.querySelectorAll(".scroll-link").forEach((link) => {
         link.addEventListener("click", (event) => {

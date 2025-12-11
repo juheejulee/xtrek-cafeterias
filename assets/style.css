@@ -5,10 +5,20 @@ body {
   background: linear-gradient(to right, #dbe4e0, #d7e7f0);
 }
 
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;           /* center horizontally */
+  padding: 0 20px;          /* left & right padding */
+  box-sizing: border-box;
+}
 
 /* HEADER */
 .site-header {
   padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #dbe4e0, #d7e7f0);
+
 }
 
 .nowrap {
@@ -39,7 +49,10 @@ body {
   gap: 40px;
   flex: 1;
   justify-content: center;
+  cursor: pointer;
 }
+
+
 
 .nav-menu a {
   text-decoration: none;
@@ -50,6 +63,8 @@ body {
 .nav-menu a:hover {
   text-decoration: underline;
 }
+
+
 
 /* DROPDOWN */
 .dropdown {
@@ -206,7 +221,7 @@ section {
   background: #fafafa;
 }
 
-.catering-note {
+.catering-note, .menu-note {
   font-size: 14px;
   margin-top: 10px;
   color: #555;
