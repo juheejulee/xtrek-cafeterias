@@ -30,6 +30,7 @@ body {
 
 /* HEADER */
 .site-header {
+  z-index: 1;
   padding: 20px 0;
   position: sticky;
   top: 0;
@@ -217,12 +218,7 @@ section {
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 16px;
-}
-
-.catering-table caption {
-  text-align: left;
-  font-weight: 600;
-  margin-bottom: 8px;
+  min-width: 700px;
 }
 
 /* Borders */
@@ -396,16 +392,21 @@ th {
     width: 100%;
   }
 
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .nav-menu {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 15px;
     align-items: center;
     padding-top: 10px;
-    width: 100%; 
+    width: 100%;
   }
 
   .nav-container {
-    height: auto; 
+    height: auto;
   }
 }
 

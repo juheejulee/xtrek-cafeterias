@@ -27,21 +27,32 @@
 
         <!-- Center: Menu -->
         <ul class="nav-menu">
-          <li><a href="#main"
+          <li>
+            <a
+              href="#main"
               data-target="main"
               class="nav-link scroll-link"
-              tabindex="0">Main</a></li>
-          <li>
-            <a href="#services"
-              data-target="services"
-              class="nav-link scroll-link"
-              tabindex="0">Services</a>
+              tabindex="0"
+              >Main</a
+            >
           </li>
           <li>
-            <a href="#catering"
+            <a
+              href="#services"
+              data-target="services"
+              class="nav-link scroll-link"
+              tabindex="0"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#catering"
               data-target="catering"
               class="nav-link scroll-link"
-              tabindex="0">Catering</a>
+              tabindex="0"
+              >Catering</a
+            >
           </li>
 
           <li class="dropdown">
@@ -61,7 +72,7 @@
 
         <!-- Right: Language -->
         <div class="nav-right">
-          <a href="index-fr.html" class="lang-link">English</a>
+          <a href="index-fr.html" class="lang-link">Français</a>
         </div>
       </nav>
     </header>
@@ -126,84 +137,85 @@
       <section id="catering" class="catering-section">
         <h2 class="section-title">Catering Offering</h2>
 
-        <table class="catering-table">
-          <caption>
-            Catering options available for Standard and Premium plans, including
-            typical dishes and dietary accommodations.
-          </caption>
+        <caption>
+          Catering options available for Standard and Premium plans, including
+          typical dishes and dietary accommodations.
+        </caption>
+        <div class="table-wrapper">
+          <table class="catering-table">
+            <thead>
+              <tr>
+                <th scope="col">Plan Type</th>
+                <th scope="col">Type</th>
+                <th scope="col">Typical Dishes</th>
+                <th scope="col">Vegan</th>
+                <th scope="col">Nut-Free</th>
+                <th scope="col">Gluten-Free</th>
+                <th scope="col">Vegetarian</th>
+              </tr>
+            </thead>
 
-          <thead>
-            <tr>
-              <th scope="col">Plan Type</th>
-              <th scope="col">Type</th>
-              <th scope="col">Typical Dishes</th>
-              <th scope="col">Vegan</th>
-              <th scope="col">Nut-Free</th>
-              <th scope="col">Gluten-Free</th>
-              <th scope="col">Vegetarian</th>
-            </tr>
-          </thead>
+            <tbody>
+              <!-- STANDARD -->
+              <tr>
+                <th scope="row" rowspan="3" tabindex="0">Standard</th>
+                <td>Breakfast</td>
+                <td>Pastries, yogurt, juice</td>
+                <td><span aria-label="Available">✓</span></td>
+                <td><span aria-label="Available"></span></td>
+                <td><span aria-label="Available on request"></span></td>
+                <td><span aria-label="Available">✓</span></td>
+              </tr>
 
-          <tbody>
-            <!-- STANDARD -->
-            <tr>
-              <th scope="row" rowspan="3" tabindex="0">Standard</th>
-              <td>Breakfast</td>
-              <td>Pastries, yogurt, juice</td>
-              <td><span aria-label="Available">✓</span></td>
-              <td><span aria-label="Available"></span></td>
-              <td><span aria-label="Available on request"></span></td>
-              <td><span aria-label="Available">✓</span></td>
-            </tr>
+              <tr>
+                <td>Lunch</td>
+                <td>Sandwiches, salads, fruit</td>
+                <td><span aria-label="Available on request"></span></td>
+                <td><span aria-label="Available">✓</span></td>
+                <td><span aria-label="Available"></span></td>
+                <td><span aria-label="Available">✓</span></td>
+              </tr>
 
-            <tr>
-              <td>Lunch</td>
-              <td>Sandwiches, salads, fruit</td>
-              <td><span aria-label="Available on request"></span></td>
-              <td><span aria-label="Available">✓</span></td>
-              <td><span aria-label="Available"></span></td>
-              <td><span aria-label="Available">✓</span></td>
-            </tr>
+              <tr>
+                <td>Dinner</td>
+                <td>Pasta, grilled chicken, vegetables</td>
+                <td><span aria-label="Available on request"></span></td>
+                <td><span aria-label="Available">✓</span></td>
+                <td><span aria-label="Available"></span></td>
+                <td><span aria-label="Available">✓</span></td>
+              </tr>
 
-            <tr>
-              <td>Dinner</td>
-              <td>Pasta, grilled chicken, vegetables</td>
-              <td><span aria-label="Available on request"></span></td>
-              <td><span aria-label="Available">✓</span></td>
-              <td><span aria-label="Available"></span></td>
-              <td><span aria-label="Available">✓</span></td>
-            </tr>
+              <!-- PREMIUM -->
+              <tr>
+                <th scope="row" rowspan="3" tabindex="0">Premium</th>
+                <td>Breakfast</td>
+                <td>Hot breakfast buffet, fresh juice</td>
+                <td><span aria-label="Available on request"></span></td>
+                <td><span aria-label="Available">✓</span></td>
+                <td><span aria-label="Available">✓</span></td>
+                <td><span aria-label="Available"></span></td>
+              </tr>
 
-            <!-- PREMIUM -->
-            <tr>
-              <th scope="row" rowspan="3" tabindex="0">Premium</th>
-              <td>Breakfast</td>
-              <td>Hot breakfast buffet, fresh juice</td>
-              <td><span aria-label="Available on request"></span></td>
-              <td><span aria-label="Available">✓</span></td>
-              <td><span aria-label="Available">✓</span></td>
-              <td><span aria-label="Available"></span></td>
-            </tr>
+              <tr>
+                <td>Lunch</td>
+                <td>Grain bowls, wraps, smoothies</td>
+                <td><span aria-label="Available">✓</span></td>
+                <td><span aria-label="Available">✓</span></td>
+                <td><span aria-label="Available">✓</span></td>
+                <td><span aria-label="Available">✓</span></td>
+              </tr>
 
-            <tr>
-              <td>Lunch</td>
-              <td>Grain bowls, wraps, smoothies</td>
-              <td><span aria-label="Available">✓</span></td>
-              <td><span aria-label="Available">✓</span></td>
-              <td><span aria-label="Available">✓</span></td>
-              <td><span aria-label="Available">✓</span></td>
-            </tr>
-
-            <tr>
-              <td>Dinner</td>
-              <td>Steak, seafood, gourmet sides</td>
-              <td><span aria-label="Available on request"></span></td>
-              <td><span aria-label="Available"></span></td>
-              <td><span aria-label="Available">✓</span></td>
-              <td><span aria-label="Available"></span></td>
-            </tr>
-          </tbody>
-        </table>
+              <tr>
+                <td>Dinner</td>
+                <td>Steak, seafood, gourmet sides</td>
+                <td><span aria-label="Available on request"></span></td>
+                <td><span aria-label="Available"></span></td>
+                <td><span aria-label="Available">✓</span></td>
+                <td><span aria-label="Available"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <p class="catering-note">
           <strong>Note:</strong> Availability may vary by cafeteria. Dietary
@@ -239,7 +251,7 @@
         <br />
         <!-- First ACCORDION BLOCK -->
         <div class="accordion-item" id="britannia">
-          <button class="accordion-header">
+          <button class="accordion-header britannia">
             Britannia
             <span class="arrow">▾</span>
           </button>
@@ -277,7 +289,7 @@
 
         <!-- Sec ACCORDION BLOCK -->
         <div class="accordion-item" id="glebe">
-          <button class="accordion-header">
+          <button class="accordion-header glebe">
             Glebe
             <span class="arrow">▾</span>
           </button>
@@ -313,7 +325,7 @@
 
         <!-- Third ACCORDION BLOCK -->
         <div class="accordion-item" id="mitigo">
-          <button class="accordion-header">
+          <button class="accordion-header mitigo">
             Mitigomijokan
             <span class="arrow">▾</span>
           </button>
@@ -351,7 +363,7 @@
 
         <!-- Forth ACCORDION BLOCK -->
         <div class="accordion-item" id="versant">
-          <button class="accordion-header">
+          <button class="accordion-header versant">
             Versant
             <span class="arrow">▾</span>
           </button>
