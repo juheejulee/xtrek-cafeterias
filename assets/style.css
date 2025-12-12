@@ -5,10 +5,26 @@ body {
   background: linear-gradient(to right, #dbe4e0, #d7e7f0);
 }
 
+/* skip to mainpage wcag */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  padding: 8px 16px;
+  background: #1b3e78;
+  color: white;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+}
+
 .main-container {
   max-width: 1200px;
-  margin: 0 auto;           /* center horizontally */
-  padding: 0 20px;          /* left & right padding */
+  margin: 0 auto;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -18,7 +34,6 @@ body {
   position: sticky;
   top: 0;
   background: linear-gradient(to right, #dbe4e0, #d7e7f0);
-
 }
 
 .nowrap {
@@ -31,7 +46,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 50px;
 }
 
 /* LOGO */
@@ -46,13 +61,11 @@ body {
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 50px;
   flex: 1;
   justify-content: center;
   cursor: pointer;
 }
-
-
 
 .nav-menu a {
   text-decoration: none;
@@ -63,8 +76,6 @@ body {
 .nav-menu a:hover {
   text-decoration: underline;
 }
-
-
 
 /* DROPDOWN */
 .dropdown {
@@ -85,7 +96,7 @@ body {
 }
 
 .dropdown-content {
-  top: 100%; /* 버튼 바로 아래에 딱 붙게 */
+  top: 100%;
   left: 0;
   position: absolute;
   background: white;
@@ -124,7 +135,8 @@ body {
 
 /* UNIFIED SECTION PADDING */
 section {
-  padding: 80px 40px; /* Key fix */
+  padding: 80px 40px;
+  /* Key fix */
 }
 
 /* HERO */
@@ -157,7 +169,8 @@ section {
   font-weight: bold;
   line-height: 1.4;
   color: #395886;
-  max-width: 380px; /* 500px -> 380px for the size of hero-text */
+  max-width: 380px;
+  /* 500px -> 380px for the size of hero-text */
 }
 
 /* SECTION TITLE */
@@ -169,29 +182,38 @@ section {
 }
 
 /* SERVICES SECTION */
-.services-container {
+.services-wrapper {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 40px;
 }
 
-.service-item h3 {
-  font-size: 22px;
-  color: #3c5d7c;
-  margin-bottom: 10px;
+.services-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.service-item p {
-  color: #2e4350;
-  line-height: 1.6;
-  max-width: 700px;
+.services-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.services-img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 12px;
 }
 
 /* CATERING TABLE */
 .catering-table {
-  width: 100%; /* table size*/
+  width: 100%;
+  /* table size*/
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 16px;
@@ -221,28 +243,44 @@ section {
   background: #fafafa;
 }
 
-.catering-note, .menu-note {
+.catering-note,
+.menu-note {
   font-size: 14px;
   margin-top: 10px;
   color: #555;
+}
+
+/* Menu pdf */
+.cafeterias-section h3 a {
+  font-size: 14px;        
+  font-weight: 600;
+  color: #0a3d62;
+  margin-left: 8px;       
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.cafeterias-section h3 a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .catering-table tbody tr:hover,
 .catering-table tbody tr:focus {
   background-color: #f4f9fb;
 }
+
 /* table column width */
 table {
-  table-layout: fixed; 
-  width: 100%; 
+  table-layout: fixed;
+  width: 100%;
 }
 
-td, th {
+td,
+th {
   word-wrap: break-word;
   padding: 12px;
 }
-
-
 
 /* Daily menu text */
 .daily-menu {
@@ -251,15 +289,7 @@ td, th {
   margin-bottom: 30px;
 }
 
-
-
 /* cafeterias */
-
-.cafeterias-section {
-  width: 70%;
-  margin: 50px auto;
-  overflow: visible;
-}
 
 .accordion-item {
   background: #ffffff;
@@ -315,7 +345,7 @@ td, th {
 }
 
 .ingredient-list {
-  columns: 2; /* 두 줄로 정렬 */
+  columns: 2;
   column-gap: 40px;
   padding-left: 20px;
 }
@@ -334,18 +364,7 @@ td, th {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 3rem;
-  font-size: 1rem;
-  color: #2b3e46;
-}
-
-
 /* Media Query */
-/* media query */
 @media (max-width: 900px) {
   .nav-container {
     flex-wrap: wrap;
@@ -361,5 +380,52 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+
+  /* Our services */
+  .services-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-right img {
+    max-width: 260px;
+  }
+
+  .services-left {
+    width: 100%;
+  }
 }
 
+/* FOOTER */
+.site-footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 15px 0;
+  border-top: 1px solid #444;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;  
+  padding: 0 40px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left a {
+  color: #ddd;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.footer-left a:hover {
+  color: #fff;
+}
+
+.footer-right {
+  font-size: 14px;
+  white-space: nowrap;
+}

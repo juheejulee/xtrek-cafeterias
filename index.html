@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore xtrek’s Ottawa cafeterias featuring fresh, 
+    locally sourced foods, convenient catering services, and a new microsite highlighting menus, locations, and daily offerings."
+    />
+
     <title>xtrek Cafeterias – Fresh, Locally Sourced Meals</title>
+
     <link rel="stylesheet" href="assets/style.css" />
   </head>
 
   <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     <!-- HEADER -->
     <header class="site-header">
       <nav class="nav-container">
@@ -49,320 +58,335 @@
     </header>
 
     <main class="main-container">
-    <!-- Main -->
-    <section id="main" class="hero">
-      <div class="hero-container">
-        <img
-          src="assets/images/round_menu.png"
-          alt="Fresh, locally sourced ingredients used by xtrek cafeterias"
-          class="hero-image"
-        />
-        <h1 class="hero-title">
-          Proudly serving fresh,
-          <span class="nowrap">high-quality meals </span>made with locally
-          sourced ingredients.
-        </h1>
-      </div>
-    </section>
-    <!-- section divider -->
-    <hr class="section-divider" />
+      <!-- Main -->
+      <section id="main" class="hero">
+        <div class="hero-container">
+          <img
+            src="assets/images/round_menu.png"
+            alt="Fresh, locally sourced ingredients used by xtrek cafeterias"
+            class="hero-image"
+          />
+          <h1 class="hero-title">
+            Proudly serving fresh,
+            <span class="nowrap">high-quality meals </span>made with locally
+            sourced ingredients.
+          </h1>
+        </div>
+      </section>
+      <!-- section divider -->
+      <hr class="section-divider" />
 
-    <!-- Services -->
-    <section id="services" class="services-section">
-      <h2 class="section-title">Our Services</h2>
+      <!-- Services -->
+      <section id="services" class="services-section">
+        <h2 class="section-title">Our Services</h2>
 
-      <div class="services-container">
-        <div class="service-item">
-          <h3>Daily Menu</h3>
-          <p>Fresh, locally sourced meals available from Monday to Friday.</p>
-          <p>
-            Ingredients are fully listed for accessibility and dietary needs.
-          </p>
+        <div class="services-wrapper">
+          <div class="services-left">
+            <div class="service-item">
+              <h3>Daily Menu</h3>
+              <p>
+                Fresh, locally sourced meals available from Monday to Friday.
+              </p>
+              <p>
+                Ingredients are fully listed for accessibility and dietary
+                needs.
+              </p>
+            </div>
+
+            <div class="service-item">
+              <h3>Catering Services</h3>
+              <p>Catering options for meetings and nearby businesses.</p>
+              <p>Menu, pricing, and availability vary by cafeteria.</p>
+            </div>
+          </div>
+
+          <div class="services-right">
+            <img
+              src="assets/images/round_catering.png"
+              alt="Cafeteria"
+              class="services-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section divider -->
+      <hr class="section-divider" />
+
+      <!-- Catering with table -->
+      <section id="catering" class="catering-section">
+        <h2 class="section-title">Catering Offering</h2>
+
+        <table class="catering-table">
+          <caption>
+            Catering options available for Standard and Premium plans, including
+            typical dishes and dietary accommodations.
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Plan Type</th>
+              <th scope="col">Type</th>
+              <th scope="col">Typical Dishes</th>
+              <th scope="col">Vegan</th>
+              <th scope="col">Nut-Free</th>
+              <th scope="col">Gluten-Free</th>
+              <th scope="col">Vegetarian</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- STANDARD -->
+            <tr>
+              <th scope="row" rowspan="3">Standard</th>
+              <td>Breakfast</td>
+              <td>Pastries, yogurt, juice</td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+            </tr>
+
+            <tr>
+              <td>Lunch</td>
+              <td>Sandwiches, salads, fruit</td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+            </tr>
+
+            <tr>
+              <td>Dinner</td>
+              <td>Pasta, grilled chicken, vegetables</td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+            </tr>
+
+            <!-- PREMIUM -->
+            <tr>
+              <th scope="row" rowspan="3">Premium</th>
+              <td>Breakfast</td>
+              <td>Hot breakfast buffet, fresh juice</td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+            </tr>
+
+            <tr>
+              <td>Lunch</td>
+              <td>Grain bowls, wraps, smoothies</td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available">✓</span></td>
+            </tr>
+
+            <tr>
+              <td>Dinner</td>
+              <td>Steak, seafood, gourmet sides</td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="catering-note">
+          <strong>Note:</strong> Availability may vary by cafeteria. Dietary
+          options are available on request.
+        </p>
+      </section>
+
+      <!-- section divider -->
+      <hr class="section-divider" />
+
+      <!-- Cafeterias accordion -->
+      <section class="cafeterias-section">
+        <h2 class="section-title">Our Cafeterias</h2>
+        <h3>
+          Menu of the day
+          <a
+            href="assets/pdf/xtrek_today_menu.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [PDF]
+          </a>
+        </h3>
+        <p class="menu-description">
+          Discover today’s fresh and flavorful selections, crafted by our chefs
+          using seasonal ingredients and local produce.
+        </p>
+
+        <p class="menu-note">
+          <strong>Note:</strong> Ingredients are available upon request. Please
+          ask our staff if you have any dietary concerns or allergies.
+        </p>
+        <br />
+        <!-- First ACCORDION BLOCK -->
+        <div class="accordion-item" id="britannia">
+          <button class="accordion-header">
+            Britannia
+            <span class="arrow">▾</span>
+          </button>
+
+          <div class="accordion-content">
+            <h3 class="dish-name">Mediterranean Grain Bowl</h3>
+
+            <p class="dish-info">
+              A vibrant and wholesome bowl packed with quinoa, brown rice, fresh
+              vegetables, and tangy feta, topped with a zesty tahini dressing.
+              Perfect for a light yet satisfying lunch.
+            </p>
+
+            <h4>Ingredients</h4>
+            <ul class="ingredient-list">
+              <li>Quinoa</li>
+              <li>Brown rice</li>
+              <li>Chickpeas</li>
+              <li>Cherry tomatoes</li>
+              <li>Cucumber</li>
+              <li>Kalamata olives</li>
+              <li>Red onion</li>
+              <li>Feta cheese</li>
+              <li>Fresh parsley</li>
+              <li>Lemon juice</li>
+              <li>Olive oil</li>
+              <li>Garlic</li>
+              <li>Sea salt</li>
+              <li>Black pepper</li>
+              <li>Sumac</li>
+              <li>Tahini dressing</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="service-item">
-          <h3>Catering Services</h3>
-          <p>Catering options for meetings and nearby businesses.</p>
-          <p>Menu, pricing, and availability vary by cafeteria.</p>
+        <!-- Sec ACCORDION BLOCK -->
+        <div class="accordion-item" id="glebe">
+          <button class="accordion-header">
+            Glebe
+            <span class="arrow">▾</span>
+          </button>
+
+          <div class="accordion-content">
+            <h3 class="dish-name">Thai Green Curry with Tofu</h3>
+
+            <p class="dish-info">
+              A fragrant and creamy coconut-based curry loaded with colorful
+              vegetables and tender tofu, infused with authentic Thai spices and
+              served with jasmine rice.
+            </p>
+
+            <h4>Ingredients</h4>
+            <ul class="ingredient-list">
+              <li>Tofu (firm, cubed)</li>
+              <li>Coconut milk</li>
+              <li>
+                Green curry paste (green chilies, lemongrass, galangal, garlic,
+                shallots, kaffir lime peel, coriander seeds, cumin, salt)
+              </li>
+              <li>Bamboo shoots</li>
+              <li>Zucchini</li>
+              <li>Bell peppers (red and yellow)</li>
+              <li>Thai basil</li>
+              <li>Fish sauce (or soy sauce for vegetarian option)</li>
+              <li>Brown sugar</li>
+              <li>Lime juice</li>
+              <li>Jasmine rice (served on the side)</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- section divider -->
-    <hr class="section-divider" />
+        <!-- Third ACCORDION BLOCK -->
+        <div class="accordion-item" id="mitigo">
+          <button class="accordion-header">
+            Mitigomijokan
+            <span class="arrow">▾</span>
+          </button>
 
-    <!-- Catering with table -->
+          <div class="accordion-content">
+            <h3 class="dish-name">Loaded Veggie Lasagna</h3>
 
-    <section id="catering" class="catering-section">
-      <h2 class="section-title">Catering Offering</h2>
+            <p class="dish-info">
+              A hearty, oven-baked lasagna layered with roasted vegetables, rich
+              tomato sauce, and a trio of cheeses, delivering comfort and flavor
+              in every bite.
+            </p>
 
-      <table class="catering-table">
-        <caption>
-          Catering options available for Standard and Premium plans, including
-          typical dishes and dietary accommodations.
-        </caption>
-
-        <thead>
-          <tr>
-            <th scope="col">Plan Type</th>
-            <th scope="col">Type</th>
-            <th scope="col">Typical Dishes</th>
-            <th scope="col">Vegan</th>
-            <th scope="col">Nut-Free</th>
-            <th scope="col">Gluten-Free</th>
-            <th scope="col">Vegetarian</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <!-- STANDARD -->
-          <tr>
-            <th scope="row" rowspan="3">Standard</th>
-            <td>Breakfast</td>
-            <td>Pastries, yogurt, juice</td>
-            <td><span aria-label="Available">✓</span></td>
-            <td><span aria-label="Available"></span></td>
-            <td><span aria-label="Available on request"></span></td>
-            <td><span aria-label="Available">✓</span></td>
-          </tr>
-
-          <tr>
-            <td>Lunch</td>
-            <td>Sandwiches, salads, fruit</td>
-            <td><span aria-label="Available on request"></span></td>
-            <td><span aria-label="Available">✓</span></td>
-            <td><span aria-label="Available"></span></td>
-            <td><span aria-label="Available">✓</span></td>
-          </tr>
-
-          <tr>
-            <td>Dinner</td>
-            <td>Pasta, grilled chicken, vegetables</td>
-            <td><span aria-label="Available on request"></span></td>
-            <td><span aria-label="Available">✓</span></td>
-            <td><span aria-label="Available"></span></td>
-            <td><span aria-label="Available">✓</span></td>
-          </tr>
-
-          <!-- PREMIUM -->
-          <tr>
-            <th scope="row" rowspan="3">Premium</th>
-            <td>Breakfast</td>
-            <td>Hot breakfast buffet, fresh juice</td>
-            <td><span aria-label="Available on request"></span></td>
-            <td><span aria-label="Available">✓</span></td>
-            <td><span aria-label="Available">✓</span></td>
-            <td><span aria-label="Available"></span></td>
-          </tr>
-
-          <tr>
-            <td>Lunch</td>
-            <td>Grain bowls, wraps, smoothies</td>
-            <td><span aria-label="Available">✓</span></td>
-            <td><span aria-label="Available">✓</span></td>
-            <td><span aria-label="Available">✓</span></td>
-            <td><span aria-label="Available">✓</span></td>
-          </tr>
-
-          <tr>
-            <td>Dinner</td>
-            <td>Steak, seafood, gourmet sides</td>
-            <td><span aria-label="Available on request"></span></td>
-            <td><span aria-label="Available"></span></td>
-            <td><span aria-label="Available">✓</span></td>
-            <td><span aria-label="Available"></span></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p class="catering-note">
-        <strong>Note:</strong> Availability may vary by cafeteria. Dietary
-        options are available on request.
-      </p>
-    </section>
-
-    <!-- section divider -->
-    <hr class="section-divider" />
-
-    <!-- Cafeterias accordion -->
-
-    <section class="cafeterias-section">
-      <h2 class="section-title">Our Cafeterias</h2>
-
-      <h2>Menu of the day</h2>
-
-      <p class="menu-description">
-        Discover today’s fresh and flavorful selections, crafted by our chefs
-        using seasonal ingredients and local produce.
-      </p>
-
-      <p class="menu-note">
-        <strong>Note:</strong> Ingredients are available upon request. Please
-        ask our staff if you have any dietary concerns or allergies.
-      </p>
-        <br>
-      <!-- ONE ACCORDION BLOCK -->
-      <div class="accordion-item" id="britannia">
-        <button class="accordion-header">
-          Britannia
-          <span class="arrow">▾</span>
-        </button>
-
-        <div class="accordion-content">
-          <h3 class="dish-name">Mediterranean Grain Bowl</h3>
-
-          <p class="dish-info">
-            A vibrant and wholesome bowl packed with quinoa, brown rice, fresh
-            vegetables, and tangy feta, topped with a zesty tahini dressing.
-            Perfect for a light yet satisfying lunch.
-          </p>
-
-          <h4>Ingredients</h4>
-          <ul class="ingredient-list">
-            <li>Quinoa</li>
-            <li>Brown rice</li>
-            <li>Chickpeas</li>
-            <li>Cherry tomatoes</li>
-            <li>Cucumber</li>
-            <li>Kalamata olives</li>
-            <li>Red onion</li>
-            <li>Feta cheese</li>
-            <li>Fresh parsley</li>
-            <li>Lemon juice</li>
-            <li>Olive oil</li>
-            <li>Garlic</li>
-            <li>Sea salt</li>
-            <li>Black pepper</li>
-            <li>Sumac</li>
-            <li>Tahini dressing</li>
-          </ul>
+            <h4>Ingredients</h4>
+            <ul class="ingredient-list">
+              <li>Lasagna noodles</li>
+              <li>Ricotta cheese</li>
+              <li>Mozzarella cheese</li>
+              <li>Parmesan cheese</li>
+              <li>Spinach</li>
+              <li>Zucchini</li>
+              <li>Eggplant</li>
+              <li>Mushrooms</li>
+              <li>Bell peppers</li>
+              <li>Onion</li>
+              <li>Garlic</li>
+              <li>Olive oil</li>
+              <li>Tomato sauce (tomatoes, basil, oregano, salt, pepper)</li>
+              <li>Fresh basil</li>
+              <li>Nutmeg</li>
+              <li>Eggs (in ricotta mix)</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <!-- 복사해서 나머지 3개 cafeteria 넣으면 됨 -->
+        <!-- Forth ACCORDION BLOCK -->
+        <div class="accordion-item" id="versant">
+          <button class="accordion-header">
+            Versant
+            <span class="arrow">▾</span>
+          </button>
 
-      <!-- Two ACCORDION BLOCK -->
-      <div class="accordion-item" id="glebe">
-        <button class="accordion-header">
-          Glebe
-          <span class="arrow">▾</span>
-        </button>
+          <div class="accordion-content">
+            <h3 class="dish-name">BBQ Pulled Jackfruit Sandwich</h3>
 
-        <div class="accordion-content">
-          <h3 class="dish-name">Thai Green Curry with Tofu</h3>
+            <p class="dish-info">
+              A smoky, sweet, and savory plant-based sandwich featuring tender
+              jackfruit in BBQ sauce, topped with crunchy coleslaw and served on
+              a toasted bun.
+            </p>
 
-          <p class="dish-info">
-            A fragrant and creamy coconut-based curry loaded with colorful
-            vegetables and tender tofu, infused with authentic Thai spices and
-            served with jasmine rice.
-          </p>
-
-          <h4>Ingredients</h4>
-          <ul class="ingredient-list">
-            <li>Tofu (firm, cubed)</li>
-            <li>Coconut milk</li>
-            <li>
-              Green curry paste (green chilies, lemongrass, galangal, garlic,
-              shallots, kaffir lime peel, coriander seeds, cumin, salt)
-            </li>
-            <li>Bamboo shoots</li>
-            <li>Zucchini</li>
-            <li>Bell peppers (red and yellow)</li>
-            <li>Thai basil</li>
-            <li>Fish sauce (or soy sauce for vegetarian option)</li>
-            <li>Brown sugar</li>
-            <li>Lime juice</li>
-            <li>Jasmine rice (served on the side)</li>
-          </ul>
+            <h4>Ingredients</h4>
+            <ul class="ingredient-list">
+              <li>Young green jackfruit (canned, drained)</li>
+              <li>
+                BBQ sauce (tomato paste, vinegar, molasses, brown sugar,
+                mustard, garlic powder, onion powder, smoked paprika)
+              </li>
+              <li>Onion</li>
+              <li>Garlic</li>
+              <li>Olive oil</li>
+              <li>Apple cider vinegar</li>
+              <li>Coleslaw mix (cabbage, carrots)</li>
+              <li>
+                Coleslaw dressing (mayonnaise, vinegar, sugar, celery seed,
+                salt)
+              </li>
+              <li>Whole wheat sandwich buns</li>
+              <li>Pickles</li>
+              <li>Fresh cilantro (optional garnish)</li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <!-- Third ACCORDION BLOCK -->
-      <div class="accordion-item" id="mitigo">
-        <button class="accordion-header">
-          Mitigomijokan
-          <span class="arrow">▾</span>
-        </button>
-
-        <div class="accordion-content">
-          <h3 class="dish-name">Loaded Veggie Lasagna</h3>
-
-          <p class="dish-info">
-            A hearty, oven-baked lasagna layered with roasted vegetables, rich
-            tomato sauce, and a trio of cheeses, delivering comfort and flavor
-            in every bite.
-          </p>
-
-          <h4>Ingredients</h4>
-          <ul class="ingredient-list">
-            <li>Lasagna noodles</li>
-            <li>Ricotta cheese</li>
-            <li>Mozzarella cheese</li>
-            <li>Parmesan cheese</li>
-            <li>Spinach</li>
-            <li>Zucchini</li>
-            <li>Eggplant</li>
-            <li>Mushrooms</li>
-            <li>Bell peppers</li>
-            <li>Onion</li>
-            <li>Garlic</li>
-            <li>Olive oil</li>
-            <li>Tomato sauce (tomatoes, basil, oregano, salt, pepper)</li>
-            <li>Fresh basil</li>
-            <li>Nutmeg</li>
-            <li>Eggs (in ricotta mix)</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- forth ACCORDION BLOCK -->
-      <div class="accordion-item" id="versant">
-        <button class="accordion-header">
-          Versant
-          <span class="arrow">▾</span>
-        </button>
-
-        <div class="accordion-content">
-          <h3 class="dish-name">BBQ Pulled Jackfruit Sandwich</h3>
-
-          <p class="dish-info">
-            A smoky, sweet, and savory plant-based sandwich featuring tender
-            jackfruit in BBQ sauce, topped with crunchy coleslaw and served on a
-            toasted bun.
-          </p>
-
-          <h4>Ingredients</h4>
-          <ul class="ingredient-list">
-            <li>Young green jackfruit (canned, drained)</li>
-            <li>
-              BBQ sauce (tomato paste, vinegar, molasses, brown sugar, mustard,
-              garlic powder, onion powder, smoked paprika)
-            </li>
-            <li>Onion</li>
-            <li>Garlic</li>
-            <li>Olive oil</li>
-            <li>Apple cider vinegar</li>
-            <li>Coleslaw mix (cabbage, carrots)</li>
-            <li>
-              Coleslaw dressing (mayonnaise, vinegar, sugar, celery seed, salt)
-            </li>
-            <li>Whole wheat sandwich buns</li>
-            <li>Pickles</li>
-            <li>Fresh cilantro (optional garnish)</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 복사해서 나머지 3개 cafeteria 넣으면 됨 -->
-    </section>
-    <!-- section divider -->
-    <hr class="section-divider" />
+      </section>
+      <!-- section divider -->
+      <hr class="section-divider" />
     </main>
     <!-- javascript -->
-    <script src="assets/script.js"></script>
+    <script src="assets/script.js" async></script>
     <!-- javascript -->
 
-    <!-- Fix for layout jump when clicking anchor navigation links -->
+    <!-- Fix for layout jump when clicking anchor navigati  on links -->
     <script>
       document.querySelectorAll(".scroll-link").forEach((link) => {
         link.addEventListener("click", (event) => {
@@ -382,11 +406,14 @@
     </script>
   </body>
 
-  <footer>
-    <div class="footer-info">
-      <p>Visit our cafeterias</p>
-      <p>We are open from Monday to Friday</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-right">© 2025 xtrek Inc.</div>
     </div>
-    <p><strong>© 2025 xtrek cafeterias</strong></p>
   </footer>
 </html>
