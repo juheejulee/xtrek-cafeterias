@@ -1,20 +1,454 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-CA">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>xtrek Cafétérias – Repas frais et locaux</title>
+
+    <meta
+      name="description"
+      content="Découvrez les cafétérias xtrek à Ottawa offrant des repas frais préparés avec des ingrédients locaux, 
+      des services de traiteur pratiques et un nouveau microsite présentant les menus, 
+      les emplacements et les offres quotidiennes."
+    />
+
+    <title>Cafétérias xtrek – Repas frais et d’origine locale</title>
+
     <link rel="stylesheet" href="assets/style.css" />
   </head>
+
   <body>
+    <a href="#services" class="skip-link">Passer au contenu principal</a>
+
     <!-- here body -->
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="nav-container">
+        <!-- Left: Logo -->
+        <div class="nav-left">
+          <a href="#" class="logo">xtrek</a>
+        </div>
+
+        <!-- Center: Menu -->
+        <ul class="nav-menu">
+          <li>
+      <a
+              href="#main"
+              data-target="main"
+              class="nav-link scroll-link"
+              tabindex="0"
+              >Accueil</a>
+          </li>
+          <li>
+            <a
+              href="#services"
+              data-target="services"
+              class="nav-link scroll-link"
+              tabindex="0"
+              >Services</a>
+          </li>
+          <li>
+            <a href="#catering"
+              data-target="catering"
+              class="nav-link scroll-link"
+              tabindex="0"
+              >Service traiteur</a
+            >
+          </li>
+
+          <li class="dropdown">
+            <button class="dropbtn">Cafétérias ▾</button>
+            <ul class="dropdown-content" id="cafeteria-menu">
+              <li>
+                <a data-target="britannia" class="scroll-link">Britannia</a>
+              </li>
+              <li>
+                <a data-target="glebe" class="scroll-link">Glebe</a>
+              </li>
+              <li>
+                <a data-target="mitigo" class="scroll-link">Mitigomijokan</a>
+              </li>
+              <li>
+                <a data-target="versant" class="scroll-link">Versant</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Right: Language -->
+        <div class="nav-right">
+          <a href="index.html" class="lang-link">Français</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <!-- Main -->
+      <section id="main" class="hero">
+        <div class="hero-container">
+          <img
+            src="assets/images/round_menu.png"
+            alt="Ingrédients frais et d’origine locale utilisés par les cafétérias xtrek"
+            class="hero-image"
+          />
+          <h1 class="hero-title">
+            Fièrement au service de repas frais et de haute qualité, préparés
+            avec des ingrédients d’origine locale.
+          </h1>
+        </div>
+      </section>
+      <!-- section divider -->
+      <hr class="section-divider" />
+
+      <!-- Services -->
+      <section id="services" class="services-section">
+        <h2 class="section-title">Nos services</h2>
+
+        <div class="services-wrapper">
+          <div class="services-left">
+            <div class="service-item">
+              <h3>Menu du jour</h3>
+              <p>
+                Repas frais préparés avec des ingrédients d’origine locale,
+                offerts du lundi au vendredi.
+              </p>
+              <p>
+                Les ingrédients sont clairement indiqués afin de répondre aux
+                besoins en matière d’accessibilité et d’alimentation.
+              </p>
+            </div>
+
+            <div class="service-item">
+              <h3>Service traiteur</h3>
+              <p>
+                Options de service traiteur pour les réunions et les entreprises
+                à proximité.
+              </p>
+              <p>
+                Les menus, les prix et la disponibilité varient selon la
+                cafétéria.
+              </p>
+            </div>
+          </div>
+
+          <div class="services-right">
+            <img
+              src="assets/images/round_catering.png"
+              alt="Cafétéria"
+              class="services-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section divider -->
+      <hr class="section-divider" />
+
+      <!-- Catering with table -->
+      <section id="catering" class="catering-section">
+        <h2 class="section-title">Service de traiteur</h2>
+
+        <table class="catering-table">
+          <caption>
+            Options de service traiteur offertes pour les forfaits Standard et
+            Premium, incluant des plats typiques et des options adaptées aux
+            besoins alimentaires.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Type de forfait</th>
+              <th scope="col">Type</th>
+              <th scope="col">Plats typiques</th>
+              <th scope="col">Végétalien</th>
+              <th scope="col">Sans noix</th>
+              <th scope="col">Sans gluten</th>
+              <th scope="col">Végétarien</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- STANDARD -->
+            <tr>
+              <th scope="row" rowspan="3" tabindex="0">Standard</th>
+              <td>Déjeuner</td>
+              <td>Pâtisseries, yogourt, jus</td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+            </tr>
+
+            <tr>
+              <td>Dîner</td>
+              <td>Sandwichs, salades, fruits</td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+            </tr>
+
+            <tr>
+              <td>Souper</td>
+              <td>Pâtes, poulet grillé, legumes</td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+            </tr>
+
+            <!-- Haut de gamme -->
+            <tr>
+              <th scope="row" rowspan="3" tabindex="0">Haut de gamme</th>
+              <td>Déjeuner</td>
+              <td>Buffet chaud, jus de fruits frais</td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+            </tr>
+
+            <tr>
+              <td>Dîner</td>
+              <td>Bols de céréales, wraps, smoothies</td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available">✓</span></td>
+            </tr>
+
+            <tr>
+              <td>Souper</td>
+              <td>Steak, fruits de mer, accompagnements gastronomiques</td>
+              <td><span aria-label="Available on request"></span></td>
+              <td><span aria-label="Available"></span></td>
+              <td><span aria-label="Available">✓</span></td>
+              <td><span aria-label="Available"></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="catering-note">
+          <strong>Note :</strong> La disponibilité peut varier selon les sites.
+          Renseignez-vous le dimanche soir. Demandez les prix à Bob.
+        </p>
+      </section>
+
+      <!-- section divider -->
+      <hr class="section-divider" />
+
+      <!-- Cafeterias accordion -->
+      <section class="cafeterias-section">
+        <h2 class="section-title">Nos cafétérias</h2>
+        <h3>
+          Menu du jour
+          <a
+            href="assets/pdf/xtrek_menu_du_jour.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [PDF]
+          </a>
+        </h3>
+        <p class="menu-description">
+          Découvrez les sélections fraîches et savoureuses du jour, préparées
+          par nos chefs à partir d’ingrédients de saison et de produits locaux.
+        </p>
+
+        <p class="menu-note">
+          <strong>Note :</strong> La liste des ingrédients est disponible sur
+          demande. Veuillez consulter notre personnel si vous avez des
+          préoccupations alimentaires ou des allergies.
+        </p>
+        <br />
+
+        <!-- First ACCORDION BLOCK -->
+        <div class="accordion-item" id="britannia">
+          <button class="accordion-header">
+            Britannia
+            <span class="arrow">▾</span>
+          </button>
+
+          <div class="accordion-content">
+            <h3 class="dish-name">Bol Méditerranéen aux Céréales</h3>
+
+            <p class="dish-info">
+              Un bol coloré et nourrissant rempli de quinoa, de riz brun, de
+              légumes frais et de feta, le tout nappé d’une sauce tahini
+              citronnée. Idéal pour un repas léger mais copieux.
+            </p>
+
+            <h4>Ingrédients</h4>
+            <ul class="ingredient-list">
+              <li>Quinoa</li>
+              <li>Riz brun</li>
+              <li>Pois chiches</li>
+              <li>Tomates cerises</li>
+              <li>Concombre</li>
+              <li>Olives Kalamata</li>
+              <li>Oignon rouge</li>
+              <li>Fromage feta</li>
+              <li>Persil frais</li>
+              <li>Jus de citron</li>
+              <li>Huile d’olive</li>
+              <li>Ail</li>
+              <li>Sel de mer</li>
+              <li>Poivre noir</li>
+              <li>Sumac</li>
+              <li>Sauce tahini (tahini, jus de citron, ail, eau, sel)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sec ACCORDION BLOCK -->
+        <div class="accordion-item" id="glebe">
+          <button class="accordion-header">
+            Glebe
+            <span class="arrow">▾</span>
+          </button>
+
+          <div class="accordion-content">
+            <h3 class="dish-name">Curry Vert Thaï au Tofu</h3>
+
+            <p class="dish-info">
+              Un curry parfumé et crémeux à base de lait de coco, garni de
+              légumes colorés et de tofu tendre, infusé d’épices thaïlandaises
+              authentiques et servi avec du riz jasmin.
+            </p>
+
+            <h4>Ingrédients</h4>
+            <ul class="ingredient-list">
+              <li>Tofu ferme (coupé en cubes)</li>
+              <li>Lait de coco</li>
+              <li>
+                Pâte de curry vert (piments verts, citronnelle, galanga, ail,
+                échalotes, zeste de combava, graines de coriandre, cumin, sel)
+              </li>
+              <li>Pousses de bambou</li>
+              <li>Courgette</li>
+              <li>Poivrons rouges et jaunes</li>
+              <li>Basilic thaï</li>
+              <li>
+                Sauce de poisson (ou sauce soja pour version végétarienne)
+              </li>
+              <li>Sucre brun</li>
+              <li>Jus de lime</li>
+              <li>Riz jasmin (en accompagnement)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Third ACCORDION BLOCK -->
+        <div class="accordion-item" id="mitigo">
+          <button class="accordion-header">
+            Mitigomijokan
+            <span class="arrow">▾</span>
+          </button>
+
+          <div class="accordion-content">
+            <h3 class="dish-name">Lasagne Végétarienne Gourmande</h3>
+
+            <p class="dish-info">
+              Une lasagne généreuse, cuite au four, composée de légumes rôtis,
+              d’une sauce tomate savoureuse et de trois fromages, pour un plat
+              réconfortant plein de saveurs.
+            </p>
+
+            <h4>Ingrédients</h4>
+            <ul class="ingredient-list">
+              <li>Pâtes à lasagne</li>
+              <li>Ricotta</li>
+              <li>Mozzarella</li>
+              <li>Parmesan</li>
+              <li>Épinards</li>
+              <li>Courgette</li>
+              <li>Aubergine</li>
+              <li>Champignons</li>
+              <li>Poivrons</li>
+              <li>Oignon</li>
+              <li>Ail</li>
+              <li>Huile d’olive</li>
+              <li>Sauce tomate (tomates, basilic, origan, sel, poivre)</li>
+              <li>Basilic frais</li>
+              <li>Muscade</li>
+              <li>Œufs (dans le mélange de ricotta)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Forth ACCORDION BLOCK -->
+        <div class="accordion-item" id="versant">
+          <button class="accordion-header">
+            Versant
+            <span class="arrow">▾</span>
+          </button>
+
+          <div class="accordion-content">
+            <h3 class="dish-name">Sandwich au Jackfruit Effiloché BBQ</h3>
+
+            <p class="dish-info">
+              Un sandwich végétal fumé, sucré et savoureux, avec du jackfruit
+              tendre en sauce BBQ, garni de coleslaw croquant et servi dans un
+              pain grillé.
+            </p>
+
+            <h4>Ingrédients</h4>
+            <ul class="ingredient-list">
+              <li>Jackfruit vert (en conserve, égoutté)</li>
+              <li>
+                Sauce BBQ (purée de tomates, vinaigre, mélasse, sucre brun,
+                moutarde, poudre d’ail, poudre d’oignon, paprika fumé)
+              </li>
+              <li>Oignon</li>
+              <li>Ail</li>
+              <li>Huile d’olive</li>
+              <li>Vinaigre de cidre</li>
+              <li>Mélange de coleslaw (chou, carottes)</li>
+              <li>
+                Sauce coleslaw (mayonnaise, vinaigre, sucre, graines de céleri,
+                sel)
+              </li>
+              <li>Pains à sandwich de blé entier</li>
+              <li>Cornichons</li>
+              <li>Coriandre fraîche (garniture facultative)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- section divider -->
+      <hr class="section-divider" />
+    </main>
+
+    <!-- javascript -->
+    <script src="assets/script.js" async></script>
+    <!-- javascript -->
+
+    <!-- Fix for layout jump when clicking anchor navigati  on links -->
+    <script>
+      document.querySelectorAll(".scroll-link").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+
+          const targetId = link.getAttribute("data-target");
+          const section = document.getElementById(targetId);
+
+          if (section) {
+            section.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
   </body>
 
-  <footer>
-    <div class="footer-info">
-      <p>Visitez nos cafétérias</p>
-      <p>Nous sommes ouverts du lundi au vendredi</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <a href="#">Conditions d’utilisation</a>
+        <a href="#">Politique de confidentialité</a>
+      </div>
+      <div class="footer-right">© 2025 xtrek Inc.</div>
     </div>
-    <p><strong>© 2025 cafétérias xtrek</strong></p>
   </footer>
 </html>

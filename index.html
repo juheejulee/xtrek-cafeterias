@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#services" class="skip-link">Skip to main content</a>
 
     <!-- HEADER -->
     <header class="site-header">
@@ -27,17 +27,26 @@
 
         <!-- Center: Menu -->
         <ul class="nav-menu">
-          <li><a data-target="main" class="nav-link scroll-link">Main</a></li>
+          <li><a href="#main"
+              data-target="main"
+              class="nav-link scroll-link"
+              tabindex="0">Main</a></li>
           <li>
-            <a data-target="services" class="nav-link scroll-link">Services</a>
+            <a href="#services"
+              data-target="services"
+              class="nav-link scroll-link"
+              tabindex="0">Services</a>
           </li>
           <li>
-            <a data-target="catering" class="nav-link scroll-link">Catering</a>
+            <a href="#catering"
+              data-target="catering"
+              class="nav-link scroll-link"
+              tabindex="0">Catering</a>
           </li>
 
           <li class="dropdown">
             <button class="dropbtn">Cafeterias ▾</button>
-            <ul class="dropdown-content">
+            <ul class="dropdown-content" id="cafeteria-menu">
               <li>
                 <a data-target="britannia" class="scroll-link">Britannia</a>
               </li>
@@ -138,7 +147,7 @@
           <tbody>
             <!-- STANDARD -->
             <tr>
-              <th scope="row" rowspan="3">Standard</th>
+              <th scope="row" rowspan="3" tabindex="0">Standard</th>
               <td>Breakfast</td>
               <td>Pastries, yogurt, juice</td>
               <td><span aria-label="Available">✓</span></td>
@@ -167,7 +176,7 @@
 
             <!-- PREMIUM -->
             <tr>
-              <th scope="row" rowspan="3">Premium</th>
+              <th scope="row" rowspan="3" tabindex="0">Premium</th>
               <td>Breakfast</td>
               <td>Hot breakfast buffet, fresh juice</td>
               <td><span aria-label="Available on request"></span></td>

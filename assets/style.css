@@ -206,7 +206,7 @@ section {
 
 .services-img {
   width: 100%;
-  max-width: 380px;
+  max-width: 323px;
   border-radius: 12px;
 }
 
@@ -252,10 +252,10 @@ section {
 
 /* Menu pdf */
 .cafeterias-section h3 a {
-  font-size: 14px;        
+  font-size: 14px;
   font-weight: 600;
   color: #0a3d62;
-  margin-left: 8px;       
+  margin-left: 8px;
   text-decoration: none;
   opacity: 0.85;
 }
@@ -289,7 +289,7 @@ th {
   margin-bottom: 30px;
 }
 
-/* cafeterias */
+/* Cafeterias */
 
 .accordion-item {
   background: #ffffff;
@@ -395,6 +395,18 @@ th {
   .services-left {
     width: 100%;
   }
+
+  .nav-menu {
+    flex-direction: column; 
+    gap: 15px;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%; 
+  }
+
+  .nav-container {
+    height: auto; 
+  }
 }
 
 /* FOOTER */
@@ -407,8 +419,8 @@ th {
 
 .footer-inner {
   max-width: 1000px;
-  margin: 0 auto;  
-  padding: 0 40px; 
+  margin: 0 auto;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
