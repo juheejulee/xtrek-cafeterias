@@ -51,7 +51,7 @@ L’objectif est de permettre aux employé(e)s, aux entrepreneur(e)s et aux entr
 
 ### 1. Menu du jour (PDF)
 Le chef souhaitait une méthode simple et flexible pour mettre à jour le menu du jour.  
-Pour répondre à ce besoin, le microsite inclut un modèle PDF téléchargeable (`xtrek_today_menu.pdf`) qui peut être remplacé à tout moment sans modifier le code du site.  
+Pour répondre à ce besoin, le microsite inclut un modèle PDF téléchargeable (`xtrek_menu_du_jour`) qui peut être remplacé à tout moment sans modifier le code du site.  
 Cela assure une maintenance simplifiée et des mises à jour rapides.
 
 ### 2. Design responsive
