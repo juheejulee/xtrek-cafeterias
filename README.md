@@ -2,7 +2,6 @@
 
 xtrek is a dynamic Ottawa-based company operating across several buildings and served by four cafeterias offering fresh, locally sourced meals. To better present these offerings, including catering services available to staff and nearby businesses, the head chef commissioned a dedicated microsite.
 
-The site will be publicly accessible through a subdomain and promoted internally via QR-code flyers and externally through roadside signage, helping people easily discover daily menus and cafeteria information.
 ---
 
 ## Features
@@ -46,7 +45,6 @@ Menu items use `data-target` attributes that scroll to corresponding sections.
 
 xtrek est une entreprise dynamique située à Ottawa, répartie sur plusieurs bâtiments et desservie par quatre cafétérias offrant des repas frais et locaux. Pour mieux présenter ces services, incluant le traiteur destiné au personnel et aux entreprises voisines, le chef a mandaté la création d’un microsite.
 
-Ce site sera accessible publiquement via un sous-domaine et promu à l’interne avec des dépliants contenant des codes QR, ainsi qu’à l’externe grâce à des affiches visibles depuis la rue, permettant de découvrir facilement les menus du jour et les informations des cafétérias.
 ---
 
 ### 1. Menu du jour (PDF)
